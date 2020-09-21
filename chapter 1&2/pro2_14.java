@@ -26,5 +26,9 @@ public class pro2_14
        //allows any num up to 9999, but not past
        lastNum = gen.nextInt(10000);
        
+       String fullNum = "(" + fullCode + ")" + "-" + middleNum + "-" + lastNum;
+       
+       System.out.println("Here's a random phone number: " + fullNum);
+       
    } 
 }

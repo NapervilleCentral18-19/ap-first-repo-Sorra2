@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * Write a description of class nameTag here.
  *
@@ -7,27 +7,21 @@
  */
 public class nameTag
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class nameTag
-     */
-    public nameTag()
+    public static void main()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.println("Enter your full name:");
+        String fullName = keyboard.nextLine();
+        
+        //grabs location of first space, to separate first and middle names
+        int firstSpace = fullName.indexOf(" ");
+        
+        /*  grabs first letter of middle name
+         *  +1 to make sure substring starts on first letter
+        */
+        int middleFirst = fullName.charAt(firstSpace + 1);
+        
+        
     }
 }
