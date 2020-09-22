@@ -23,7 +23,10 @@ public class pro2_10
           //heron's formula to calculate area
           double area = s*(s-a)*(s-b)*(s-c);
           
-          System.out.println("The area is "+Math.sqrt(area));
+          //to shorten to two decimals
+          DecimalFormat fmt = new DecimalFormat("0.##");
+          
+          System.out.println("The area is "+fmt.format(Math.sqrt(area)));
           
       }
 }
