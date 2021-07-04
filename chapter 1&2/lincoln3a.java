@@ -1,5 +1,5 @@
-//name
-//date
+//name Sorra Tweed
+//date 9/17/20
 //example 1.1
 //first program to test output
 
@@ -11,7 +11,7 @@ public static void main  (String[] args)	// must have main
 	System.out.println("A quote by Abraham Lincolin:"  );
 	System.out.println("Whatever you are, be a good one."  );
 	
-	System.out.println(
+	System.out.println();
 
 }//end of main
 }//end of class lincolin
